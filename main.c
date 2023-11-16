@@ -10,11 +10,7 @@ stack_t *h = NULL;
 
 int main(int ac, char *av[])
 {
-	if (ac != 2)
-	{
-		fprintf(stderr, "USAGE: monty file\n");
-		exit(EXIT_FAILURE);
-	}
+	err_argc(ac);
 	get_file(av[1]);
 	free_stack();
 	return (0);

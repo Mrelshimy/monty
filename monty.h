@@ -44,6 +44,7 @@ extern stack_t *h;
 stack_t *start_node(int i);
 typedef void (*opcode_fn)(stack_t **, unsigned int);
 
+void err_argc(int argc);
 void get_file(char *fname);
 int tokenizer(char *buffer, int l_num, int sorq);
 void get_file_line(FILE *);

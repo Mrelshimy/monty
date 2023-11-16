@@ -1,5 +1,14 @@
 #include "monty.h"
 
+void err_argc(int argc)
+{
+	if (argc != 2)
+	{
+		fprintf(stderr, "USAGE: monty file\n");
+		exit (EXIT_FAILURE);
+	}
+}
+
 /**
  * err_switch_1 - Prints error messages determined by code.
  * @err_id: The error codes are the following:
