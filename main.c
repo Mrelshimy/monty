@@ -1,12 +1,21 @@
 #include "monty.h"
-int sorq = 0;
+stack_t *h = NULL;
 
-int main(int argc, char **argv)
+/**
+ * main - entry point
+ * @ac: args count
+ * @av: args list
+ * Return: 0
+ */
+
+int main(int ac, char *av[])
 {
-	stack_t *nstack = NULL;
-
-	err_fn_args(argc, &nstack);
-	get_file(argv[1], &nstack);
-	free_stack(nstack);
+	if (ac != 2)
+	{
+		fprintf(stderr, "USAGE: monty file\n");
+		exit(EXIT_FAILURE);
+	}
+	get_file(av[1]);
+	free_stack();
 	return (0);
 }
