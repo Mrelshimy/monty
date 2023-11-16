@@ -66,11 +66,4 @@ void err_switch_1(int err_id, ...);
 void err_switch_2(int err_id, ...);
 void err_switch_str(int err_id, ...);
 
-/*String operations*/
-/*void print_char(stack_t **, unsigned int);*/
-/*void print_str(stack_t **, unsigned int);*/
-/*void rotl(stack_t **, unsigned int);*/
-/*void rotr(stack_t **, unsigned int);*/
-/*int len_chars(FILE *);*/
-
 #endif

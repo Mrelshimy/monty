@@ -87,10 +87,6 @@ void get_opcode(char *op_code, char *op_val, int l_num, int sorq)
 		{"div", div_stack_nodes},
 		{"mul", mul_stack_nodes},
 		{"mod", mod_stack_nodes},
-		/*{"pchar", print_char},*/
-		/* {"pstr", print_str},*/
-		/* {"rotl", rotl},*/
-		/* {"rotr", rotr},*/
 		{NULL, NULL}
 	};
 	if (op_code[0] == '#')
