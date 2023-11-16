@@ -75,29 +75,3 @@ void err_switch_2(int err_id, ...)
 	free_stack();
 	exit(EXIT_FAILURE);
 }
-
-/**
- * err_switch_str - handles str errors.
- * @err_id: The error codes
- */
-void err_switch_str(int err_id, ...)
-{
-	va_list argv;
-	int l_num;
-
-	va_start(argv, err_id);
-	l_num = va_arg(argv, int);
-	switch (err_id)
-	{
-		case 10:
-			fprintf(stderr, "L%d: can't pchar, value out of range\n", l_num);
-			break;
-		case 11:
-			fprintf(stderr, "L%d: can't pchar, stack empty\n", l_num);
-			break;
-		default:
-			break;
-	}
-	free_stack();
-	exit(EXIT_FAILURE);
-}

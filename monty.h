@@ -64,6 +64,5 @@ void mul_stack_nodes(stack_t **, unsigned int);
 void mod_stack_nodes(stack_t **, unsigned int);
 void err_switch_1(int err_id, ...);
 void err_switch_2(int err_id, ...);
-void err_switch_str(int err_id, ...);
 
 #endif
