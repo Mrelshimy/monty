@@ -1,5 +1,10 @@
 #include "monty.h"
 
+/**
+ * err_argc - error function if argc != 2
+ *@argc: input args
+ */
+
 void err_argc(int argc)
 {
 	if (argc != 2)
